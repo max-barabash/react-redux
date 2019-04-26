@@ -23,9 +23,9 @@ password: 12345
 Содержит список твитов
 Если пользователь кликает на страницу “tweets” и он не “авторизован” — перекидывать на страницу “/” форму логина
 Каждый твит представляет собой
-```js
+```flow
 {
-	id: unique text || number,
+	id: unique String || number,
 	name: String,
 	Author: String,
 	Date: String,
@@ -42,3 +42,13 @@ password: 12345
 [Дизайн](https://docs.google.com/presentation/d/1V78Rf280Q-k3H6ttYXLAYCsxOPMkTHSy8r8UCCaj_nk/edit?usp=sharing) - дизайн представлен в общем виде. Размеры и цвета брать из него не обязательно.
 ссылк на общий коцепт приложения. 
  
+## App
+Все необходимое есть в папке app:
+Доставлены зависимости
+react-router-dom
+react-redux
+redux
+styled-components
+
+Как пользоваться:
+app/README.md
