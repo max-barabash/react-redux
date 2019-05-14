@@ -1,4 +1,4 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -6,9 +6,145 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  height: 100%;
+}
+
+#main {
+  display: flex;
+  height: 100%;
+}
+
+#section {
+  width: 100%;
+}
+
+#content-container {
+  height: 90%;
+  padding: 20px;
+}
+
+#navigation-bar {
+  background-color: #233470;
+  width: 10%;
+  height: 100%;
+}
+
+#navigation-bar div {
+  height: 5%;
+  font-size: large;
+  color: white;
+  text-align: center;
+  min-height: 50px;
+  border-right: #6c757d solid 1px;
+}
+
+#navigation-bar div.section-link {
+  border: #6c757d solid 1px;
+}
+
+#navigation-bar div.section-link:hover {
+  background-color: #693D20;
+}
+
+#action-bar {
+  background-color: #233470;
+  height: 5%;
+  width: 100%;
+  min-height: 50px;
+}
+
+#btn-wrapper {
+  float: right;
+  padding-right: 5%;
+  padding-top: 10px;
+}
+
+#add-tweet-btn {
+  text-align: center;
+  font-size: large;
+}
+
+#login-form {
+  width: 20%;
+  height: 60%;
+  margin: auto;
+  padding-top: 30vh;
+}
+
+#login-form input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 3em;
+  font-size: large;
+}
+
+#login-form button {
+  background-color: #0056b3;
+  color: white;
+}
+
+button {
+  color: black;
+  font-size: large;
+}
+
+#login-form button {
+  display: block;
+  width: 60%;
+  height: 3em;
+  margin: auto;
+}
+
+#add-tweet-form {
+  background-color: #233470;
+  position: absolute;
+  left: 50%;
+  margin-left: -15%;
+  top: 50%;
+  margin-top: -15%;
+  width: 30%;
+  border: solid 2px #6c757d;
+}
+
+#add-tweet-form-wrapper {
+  width: 50%;
+  margin: 20px auto 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#add-tweet-form-wrapper div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#add-tweet-form-wrapper div#tweet-name-input-wrapper {
+  width: 300px;
+  height: 50px;
+}
+
+#tweet-name-input {
+  font-size: large;
+}
+
+#add-tweet-form-wrapper input{
+  width: 100%;
+  height: 100%;
+}
+
+#add-tweet-form-wrapper button{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 304px;
+  height: 50px;
 }
